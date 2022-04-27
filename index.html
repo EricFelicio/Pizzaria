@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Controlador de vendas</h1>
+    </header>
+
+    <section>
+        <h3>Selecione a pizza</h3>
+        <form>
+            <ul>
+                <li id="inputPizza">
+                <input type="radio" name="queijo" id="selectQueijo">
+                    <label for="selectQueijo" >Quejio</label>
+                </li>
+                <li id="inputPizza">
+                    <input type="radio" name="frango" id="selectFrango">
+                    <label for="selectFrango" >Frango</label>
+                </li>
+                <li id="inputPizza">
+                    <input type="radio" name="peperone" id="selectPeperone">
+                    <label for="selectPeperone" >Peperone</label>
+                </li>
+                <li id="inputPizza">
+                    <input type="radio" name="brocolis" id="selectBrocolis">
+                    <label for="selectBrocolis" >Brócolis</label>
+                </li>
+            </ul>
+
+            <ul>
+                <input type="button" value="Comprar" id="buttonComprar">
+                <input type="button" value="Retirar" id="buttonRetirar">
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <table>
+            <tr>
+                <th>Sabores</th><th>Quantidade</th><th>Valores</th>
+            </tr>
+            <tr>
+                <td> Queijo</td><td id="quantidadeQueijo">123</td><td id="valoresQueijo">123</td>
+            </tr>
+            <tr>
+                <td >Frango</td><td id="quantidadeFrango">123</td><td id="valoresFrango">123</td>
+            </tr>
+            <tr>
+                <td >Peperone</td><td id="quantidadePeperone">123</td><td id="valoresPeperone">123</td>
+            </tr>
+            <tr>
+                <td >Brocolis</td><td id="quantidadeBrocolis">123</td><td id="valoresBrocolis">123</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
