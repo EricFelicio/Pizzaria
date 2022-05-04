@@ -16,39 +16,57 @@ let somaValores = 0.00;
 let buttonComprar = document.getElementById("buttonComprar");
 let buttonRetirar = document.getElementById("buttonRetirar");
 
-
-let inputPizza = document.getElementById("inputPizza");
-
-switch (true)
-{
-    case inputPizza = "selectQueijo":
+function Comprar() {
+    if (document.getElementById("selectQueijo").checked) {
         quantidadeQueijo = quantidadeQueijo + 1;
         valoresQueijo = valoresQueijo + 30.00;
         document.getElementById("quantidadeQueijo").innerHTML = quantidadeQueijo;
         document.getElementById("valoresQueijo").innerHTML = valoresQueijo;
-    break;
 
-    case inputPizza = "selectFrango":
+    } else if (document.getElementById("selectFrango").checked) {
         quantidadeFrango = quantidadeFrango + 1;
         valoresFrango = valoresFrango + 50.00;
         document.getElementById("quantidadeFrango").innerHTML = quantidadeFrango;
         document.getElementById("valoresFrango").innerHTML = valoresFrango;
-    break;
 
-    case inputPizza = "selectPeperone":
+    } else if (document.getElementById("selectPeperone").checked) {
         quantidadePeperone = quantidadePeperone + 1;
         valoresPeperone = valoresPeperone + 20.00;
         document.getElementById("quantidadePeperone").innerHTML = quantidadePeperone;
         document.getElementById("valoresPeperone").innerHTML = valoresPeperone;
-    break;
 
-    case inputPizza = "selectBrocolis":
+    } else {
         quantidadeBrocolis = quantidadeBrocolis + 1;
         valoresBrocolis = valoresBrocolis + 25.00;
         document.getElementById("quantidadeBrocolis").innerHTML = quantidadeBrocolis;
         document.getElementById("valoresBrocolis").innerHTML = valoresBrocolis;
-    break;
+    };
 };
 
+function Retirar() {
+    if ( (document.getElementById("selectQueijo").checked) || (quantidadeQueijo > 0) || (valoresQueijo > 0) ) {
+        quantidadeQueijo = quantidadeQueijo - 1;
+        valoresQueijo = valoresQueijo - 30.00;
+        document.getElementById("quantidadeQueijo").innerHTML = quantidadeQueijo;
+        document.getElementById("valoresQueijo").innerHTML = valoresQueijo;
 
+    } else if ( (document.getElementById("selectFrango").checked) || (quantidadeFrango > 0) || (valoresFrango > 0) )  {
+        quantidadeFrango = quantidadeFrango - 1;
+        valoresFrango = valoresFrango - 50.00;
+        document.getElementById("quantidadeFrango").innerHTML = quantidadeFrango;
+        document.getElementById("valoresFrango").innerHTML = valoresFrango;
 
+    } else if ( (document.getElementById("selectPeperone").checked) || (quantidadePeperone > 0) || (valoresPeperone > 0) ) {
+        quantidadePeperone = quantidadePeperone - 1;
+        valoresPeperone = valoresPeperone - 20.00;
+        document.getElementById("quantidadePeperone").innerHTML = quantidadePeperone;
+        document.getElementById("valoresPeperone").innerHTML = valoresPeperone;
+
+    } else if ( (document.getElementById("selectBrocolis").checked) || (quantidadeBrocolis > 0) || (valoresBrocolis > 0) ) {
+        quantidadeBrocolis = quantidadeBrocolis - 1;
+        valoresBrocolis = valoresBrocolis - 25.00;
+        document.getElementById("quantidadeBrocolis").innerHTML = quantidadeBrocolis;
+        document.getElementById("valoresBrocolis").innerHTML = valoresBrocolis;
+
+    } else {};
+};

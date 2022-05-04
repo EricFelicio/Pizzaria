@@ -17,27 +17,27 @@
         <h3>Selecione a pizza</h3>
         <form>
             <ul>
-                <li id="inputPizza">
-                <input type="radio" name="queijo" id="selectQueijo">
+                <li>
+                <input type="radio" name="pizza" id="selectQueijo">
                     <label for="selectQueijo" >Quejio</label>
                 </li>
                 <li id="inputPizza">
-                    <input type="radio" name="frango" id="selectFrango">
+                    <input type="radio" name="pizza" id="selectFrango">
                     <label for="selectFrango" >Frango</label>
                 </li>
-                <li id="inputPizza">
-                    <input type="radio" name="peperone" id="selectPeperone">
+                <li>
+                    <input type="radio" name="pizza" id="selectPeperone">
                     <label for="selectPeperone" >Peperone</label>
                 </li>
-                <li id="inputPizza">
-                    <input type="radio" name="brocolis" id="selectBrocolis">
+                <li>
+                    <input type="radio" name="pizza" id="selectBrocolis">
                     <label for="selectBrocolis" >Brócolis</label>
                 </li>
             </ul>
 
             <ul>
-                <input type="button" value="Comprar" id="buttonComprar">
-                <input type="button" value="Retirar" id="buttonRetirar">
+                <input type="button" value="Comprar" onclick="Comprar()" id="buttonComprar">
+                <input type="button" value="Retirar" onclick="Retirar()" id="buttonRetirar">
             </ul>
         </form>
     </section>
@@ -48,16 +48,16 @@
                 <th>Sabores</th><th>Quantidade</th><th>Valores</th>
             </tr>
             <tr>
-                <td> Queijo</td><td id="quantidadeQueijo">123</td><td id="valoresQueijo">123</td>
+                <td> Queijo</td><td id="quantidadeQueijo"></td><td id="valoresQueijo"></td>
             </tr>
             <tr>
-                <td >Frango</td><td id="quantidadeFrango">123</td><td id="valoresFrango">123</td>
+                <td >Frango</td><td id="quantidadeFrango"></td><td id="valoresFrango"></td>
             </tr>
             <tr>
-                <td >Peperone</td><td id="quantidadePeperone">123</td><td id="valoresPeperone">123</td>
+                <td >Peperone</td><td id="quantidadePeperone"></td><td id="valoresPeperone"></td>
             </tr>
             <tr>
-                <td >Brocolis</td><td id="quantidadeBrocolis">123</td><td id="valoresBrocolis">123</td>
+                <td >Brocolis</td><td id="quantidadeBrocolis"></td><td id="valoresBrocolis"></td>
             </tr>
         </table>
     </section>
